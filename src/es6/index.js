@@ -42,3 +42,9 @@ let team2 = ['Ana', 'Valeria', 'Camila'];
 
 let education = ['David', ...team, ...team2];
 console.log(education);
+
+// Parámetros en objetos, asignar valores a objetos a partir de una variable
+let name = 'Ana';
+let age = 30;
+obj = {name, age}
+console.log(obj);
