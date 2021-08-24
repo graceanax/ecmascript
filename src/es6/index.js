@@ -29,9 +29,16 @@ const animales = ["🐒","🦊","🐥"];
 const [mono, zorro, pollo] = animales;
 console.log(mono, zorro, pollo);
 
-// valores de retorno, con un valor  por defecto
+// -- valores de retorno, con un valor  por defecto
 function ropa () {
   return ["🧤","👔","🧣"];
 }
 let [guantes, camisa, bufanda, zapato = "👟"] = ropa();
 console.log(guantes, camisa, bufanda, zapato);
+
+// Operador de progagación o Spread Operator
+let team = ['Oscar', 'Julian', 'Ricardo'];
+let team2 = ['Ana', 'Valeria', 'Camila'];
+
+let education = ['David', ...team, ...team2];
+console.log(education);
