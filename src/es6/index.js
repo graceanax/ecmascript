@@ -15,3 +15,23 @@ console.log(epicPhrase);
 let lorem = `Una frase épica
 que necesitamos`;
 console.log(lorem);
+
+// Destructuración
+let person = {
+  'name' : 'Ana',
+  'age' : 30,
+  'country' : 'GT'
+}
+let {name, age, country} = person;
+console.log(name, age, country);
+
+const animales = ["🐒","🦊","🐥"];
+const [mono, zorro, pollo] = animales;
+console.log(mono, zorro, pollo);
+
+// valores de retorno, con un valor  por defecto
+function ropa () {
+  return ["🧤","👔","🧣"];
+}
+let [guantes, camisa, bufanda, zapato = "👟"] = ropa();
+console.log(guantes, camisa, bufanda, zapato);
