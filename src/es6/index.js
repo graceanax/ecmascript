@@ -49,7 +49,7 @@ let age = 30;
 obj = {name, age}
 console.log(obj);
 
-// arroy functions, ejemplo obtener nombres, las arrow function son funciones anónimas
+// arrow functions, ejemplo obtener nombres, las arrow function son funciones anónimas
 const names = [
   {name: 'Ana', age: 30},
   {name: 'Oscar', age: 32}
@@ -65,3 +65,21 @@ const listOfNames3 = name => {
 }
 // -- otra forma
 const square = num => num * num;
+
+// Promesas, Js no es sincrónico. Ejecuta elemento por elemento. Para manejar el asincronismo por ejemplo llamar una api, las promesas indican que algo va a pasar
+// necesita 2 elementos, result o reject
+
+const helloPromise = () => {
+  return new Promise((resolve, reject) => {
+    // espera una lógica a resolver
+    if (true) {
+      resolve('Todo bien');
+    } else {
+      reject('No funcionó');
+    }
+  })
+}
+// se pueden anida varios elementos them
+helloPromise()
+  .then(response => console.log(response))
+  .catch(error => console.log(error));
