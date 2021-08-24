@@ -83,3 +83,21 @@ const helloPromise = () => {
 helloPromise()
   .then(response => console.log(response))
   .catch(error => console.log(error));
+
+// Clases, una forma más fácil de manejar objetos y la herencia dentro de javascript
+class calculator {
+  //-- asignar un constructor para inicializar la clase, variables que estarán en un scope global
+  constructor() {
+    this.valueA = 0;
+    this.valueB = 0;
+  }
+  //-- metodo suma
+  sum(valueA, valueB) {
+    this.valueA = valueA;
+    this.valueB = valueB;
+    return this.valueA + this.valueB;
+  }
+}
+
+const calc = new calculator();
+console.log(calc.sum(2,2));
