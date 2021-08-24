@@ -9,4 +9,9 @@ newFunction();
 let hello = "Hello";
 let world = "World";
 let epicPhrase = `${hello} ${world}`;
-console.log(epicPhrase)
+console.log(epicPhrase);
+
+// Multilínea
+let lorem = `Una frase épica
+que necesitamos`;
+console.log(lorem);
