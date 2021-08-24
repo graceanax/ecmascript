@@ -48,3 +48,20 @@ let name = 'Ana';
 let age = 30;
 obj = {name, age}
 console.log(obj);
+
+// arroy functions, ejemplo obtener nombres, las arrow function son funciones anónimas
+const names = [
+  {name: 'Ana', age: 30},
+  {name: 'Oscar', age: 32}
+]
+let listOfNames = names.map(item => console.log(item.name));
+
+const listOfNames2 = (name, age, country) => {
+  ...
+};
+// -- si tengo un solo parámetro
+const listOfNames3 = name => {
+  ...
+}
+// -- otra forma
+const square = num => num * num;
